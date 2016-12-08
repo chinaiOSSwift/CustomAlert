@@ -25,6 +25,9 @@
     NSString * urlStr = @"http://dldir1.qq.com/qqfile/QQforMac/QQ_V4.0.2.dmg";
     NSString * filePath = [NSString stringWithFormat:@"%@/Documents/QQ.dmg",NSHomeDirectory()];
     NSLog(@"filePath = %@",filePath);
+
+    // 下载按钮必须为@"立即下载" 
+
     BJAlertView * alert = [[BJAlertView alloc]initWithFrame:[UIScreen mainScreen].bounds];
    // [alert initWithTitle:@"提示: 系统应用升级" messages:@[@"1. 我很好 ",@"2. 你好吗 ",@"3, 好久不见"] delegate:self withUrl:urlStr toFilePath:filePath cancelButtonTitle:@"取消" otherButtonTitles:@"立即下载"];
     // 这个是不带 下载条的方法
